@@ -19,7 +19,11 @@ body {
   background: white;
   width: 480px;
   border-radius: 10px;
+  justify-content: space-evenly;
+  padding: 15px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 15px;
 }
 
 .icon {
@@ -33,6 +37,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.header {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.massage > * {
+  margin-top: 10px;
+}
+
+.massage > *:first {
+  margin-top: 0;
 }
 
 .close-button {
@@ -46,6 +64,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   border: 1px solid #eee;
   padding: 0;
 }
